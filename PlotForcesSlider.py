@@ -10,6 +10,8 @@ file_path_control = r"C:\Users\tcarlisle\Documents\Python\Plotting Data\cuttercy
 df_data = pd.read_csv(file_path_data, index_col = 'Time')
 df_control = pd.read_csv(file_path_control, index_col = 'Time')
 
+print(df_data.dtypes)
+
 # Ensure the length of the two dataframes match by aligning them
 min_len = min(len(df_data), len(df_control))
 df_data = df_data[:min_len]
