@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, Button
 
 # Define the file paths
-file_path_data = r"C:\Users\tcarlisle\Documents\Python\Plotting Data\run02.csv"  # Data file path
+file_path_data = r"C:\Users\tcarlisle\Documents\Python\Data Visualization\Data-Visualization\run05.csv"  # Data file path
 file_path_control = r"C:\Users\tcarlisle\Documents\Python\Plotting Data\cuttercycling.csv"  # Control data file path
 
 # Read the CSV files
@@ -61,7 +61,7 @@ line_fz_control, = ax1.plot(df_control.index, df_control["Fz_lb"], label="Fz (Co
 
 ax1.set_xlabel("Time (Index)")
 ax1.set_ylabel("Force (lb)")
-ax1.set_title("Forces over Time (in lb)")
+ax1.set_title("Forces over Time (lb)")
 ax1.legend()
 ax1.grid(True)
 
@@ -76,7 +76,7 @@ line_tz_control, = ax2.plot(df_control.index, df_control["Tz_lb_in"], label="Tz 
 
 ax2.set_xlabel("Time (Index)")
 ax2.set_ylabel("Moment (lb·in)")
-ax2.set_title("Moments over Time (in lb·in)")
+ax2.set_title("Moments over Time (lb·in)")
 ax2.legend()
 ax2.grid(True)
 
